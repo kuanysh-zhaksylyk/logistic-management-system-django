@@ -1,0 +1,13 @@
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.messages_control]
+disable = ["import-error"]
+
+[tool.flake8]
+exclude = ["venv"]
+max-line-length = 200
+ignore = ["F401", "W191", "E101", "W503"]
