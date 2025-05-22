@@ -16,7 +16,6 @@ RUN pip install -r requirements.txt
 
 COPY . /app/
 
-# Сбор статики
 RUN python src/manage.py collectstatic --noinput
 
 EXPOSE 8000
